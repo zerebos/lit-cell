@@ -1,0 +1,36 @@
+# Lit Cell
+
+A pair of terminal colour schemes, dark and light, from [Zinc](https://zincterminal.dev), a precise, native terminal for Windows.
+
+Lit Cell is built around a phosphor screen. A near-black ground with a faint green cast, a mint phosphor green, warm amber and soft, readable pastels. Lit Cell Light keeps the same hues, deepened for a pale paper ground.
+
+![Lit Cell](screenshots/lit-cell.png)
+
+![Lit Cell Light](screenshots/lit-cell-light.png)
+
+## Palette
+
+| | Lit Cell | Lit Cell Light |
+|---|---|---|
+| Background | `#0C110E` | `#F1F4EF` |
+| Foreground | `#CFDDD3` | `#1B2620` |
+| Cursor | `#3DF2A0` | `#0B7A4B` |
+| Selection | `#1E4533` | `#CBE6D6` |
+| Black / bright | `#1C2420` / `#758679` | `#1B2620` / `#5F6E66` |
+| Red / bright | `#FF6B6B` / `#FF9494` | `#AA2826` / `#C9382F` |
+| Green / bright | `#3DF2A0` / `#86FFC6` | `#09663F` / `#0C7E4F` |
+| Yellow / bright | `#FFB000` / `#FFCB5C` | `#834D00` / `#9E5F00` |
+| Blue / bright | `#6FB3F2` / `#9CCBFF` | `#225B9D` / `#316FB7` |
+| Magenta / bright | `#C99AF2` / `#DDBCFF` | `#7E3E98` / `#9A4BB9` |
+| Cyan / bright | `#48D6CF` / `#86ECE6` | `#096561` / `#0C7B75` |
+| White / bright | `#B9C7BE` / `#EDEFEA` | `#A9B4AD` / `#FFFFFF` |
+
+Contrast was checked against the background in both schemes. In Lit Cell, every colour but black reaches at least 4.5:1. In Lit Cell Light, normal colours sit around 6.2:1 and bright ones around 4.6:1, while the whites stay quiet on purpose, since programs use them as backgrounds.
+
+## Sources
+
+The schemes are defined once, in `src/`, in the YAML format used by iTerm2-Color-Schemes. Every other file here is generated from those with that project's tools, so all ports always agree. To change a colour, edit `src/` and regenerate.
+
+## License
+
+[MIT](LICENSE). Use, modify and redistribute the schemes freely.
