@@ -1,0 +1,35 @@
+name: Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  generated:
+    name: Generated files are up to date
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tokens, contrast, src/*.yml, SPEC.md and palette.svg
+        run: python tools/build.py --check
+
+      - name: Fetch iTerm2-Color-Schemes' generator
+        run: |
+          commit=$(sed -n 's/^COMMIT=//p' tools/ports.sh)
+          git clone --quiet --filter=blob:none https://github.com/mbadolato/iTerm2-Color-Schemes.git .cache/iTerm2-Color-Schemes
+          git -C .cache/iTerm2-Color-Schemes checkout --quiet "$commit"
+          pip install --quiet -r .cache/iTerm2-Color-Schemes/requirements.txt
+
+      - name: Terminal ports
+        run: |
+          tools/ports.sh
+          if [ -n "$(git status --porcelain -- . ':!.cache')" ]; then
+            git status --short -- . ':!.cache'
+            echo "::error::Ports are out of date. Run tools/ports.sh and commit the result."
+            exit 1
+          fi
