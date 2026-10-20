@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="516" viewBox="0 0 880 516" font-family="ui-monospace, 'Cascadia Mono', 'SF Mono', Menlo, Consolas, monospace">
+<rect x="0" y="0" width="880" height="250" rx="14" fill="#0C110E"/>
+<rect x="0.5" y="0.5" width="879" height="249" rx="13.5" fill="none" stroke="#758679" stroke-opacity="0.35"/>
+<text x="28" y="40" font-size="18" font-weight="700" fill="#CFDDD3">Lit Cell</text>
+<text x="852" y="40" font-size="13" text-anchor="end" fill="#758679">bg #0C110E · fg #CFDDD3 · cursor #3DF2A0</text>
+<rect x="28.0" y="64" width="92" height="44" rx="6" fill="#1C2420" stroke="#758679" stroke-opacity="0.5"/>
+<text x="28.0" y="124" font-size="11.5" fill="#CFDDD3">#1C2420</text>
+<text x="28.0" y="138" font-size="10.5" fill="#758679">0 black</text>
+<rect x="132.6" y="64" width="92" height="44" rx="6" fill="#FF6B6B"/>
+<text x="132.6" y="124" font-size="11.5" fill="#CFDDD3">#FF6B6B</text>
+<text x="132.6" y="138" font-size="10.5" fill="#758679">1 red</text>
+<rect x="237.1" y="64" width="92" height="44" rx="6" fill="#3DF2A0"/>
+<text x="237.1" y="124" font-size="11.5" fill="#CFDDD3">#3DF2A0</text>
+<text x="237.1" y="138" font-size="10.5" fill="#758679">2 green</text>
+<rect x="341.7" y="64" width="92" height="44" rx="6" fill="#FFB000"/>
+<text x="341.7" y="124" font-size="11.5" fill="#CFDDD3">#FFB000</text>
+<text x="341.7" y="138" font-size="10.5" fill="#758679">3 yellow</text>
+<rect x="446.3" y="64" width="92" height="44" rx="6" fill="#6FB3F2"/>
+<text x="446.3" y="124" font-size="11.5" fill="#CFDDD3">#6FB3F2</text>
+<text x="446.3" y="138" font-size="10.5" fill="#758679">4 blue</text>
+<rect x="550.9" y="64" width="92" height="44" rx="6" fill="#C99AF2"/>
+<text x="550.9" y="124" font-size="11.5" fill="#CFDDD3">#C99AF2</text>
+<text x="550.9" y="138" font-size="10.5" fill="#758679">5 magenta</text>
+<rect x="655.4" y="64" width="92" height="44" rx="6" fill="#48D6CF"/>
+<text x="655.4" y="124" font-size="11.5" fill="#CFDDD3">#48D6CF</text>
+<text x="655.4" y="138" font-size="10.5" fill="#758679">6 cyan</text>
+<rect x="760.0" y="64" width="92" height="44" rx="6" fill="#B9C7BE"/>
+<text x="760.0" y="124" font-size="11.5" fill="#CFDDD3">#B9C7BE</text>
+<text x="760.0" y="138" font-size="10.5" fill="#758679">7 white</text>
+<rect x="28.0" y="150" width="92" height="44" rx="6" fill="#758679"/>
+<text x="28.0" y="210" font-size="11.5" fill="#CFDDD3">#758679</text>
+<text x="28.0" y="224" font-size="10.5" fill="#758679">8 bright black</text>
+<rect x="132.6" y="150" width="92" height="44" rx="6" fill="#FF9494"/>
+<text x="132.6" y="210" font-size="11.5" fill="#CFDDD3">#FF9494</text>
+<text x="132.6" y="224" font-size="10.5" fill="#758679">9 bright red</text>
+<rect x="237.1" y="150" width="92" height="44" rx="6" fill="#86FFC6"/>
+<text x="237.1" y="210" font-size="11.5" fill="#CFDDD3">#86FFC6</text>
+<text x="237.1" y="224" font-size="10.5" fill="#758679">10 bright green</text>
+<rect x="341.7" y="150" width="92" height="44" rx="6" fill="#FFCB5C"/>
+<text x="341.7" y="210" font-size="11.5" fill="#CFDDD3">#FFCB5C</text>
+<text x="341.7" y="224" font-size="10.5" fill="#758679">11 bright yellow</text>
+<rect x="446.3" y="150" width="92" height="44" rx="6" fill="#9CCBFF"/>
+<text x="446.3" y="210" font-size="11.5" fill="#CFDDD3">#9CCBFF</text>
+<text x="446.3" y="224" font-size="10.5" fill="#758679">12 bright blue</text>
+<rect x="550.9" y="150" width="92" height="44" rx="6" fill="#DDBCFF"/>
+<text x="550.9" y="210" font-size="11.5" fill="#CFDDD3">#DDBCFF</text>
+<text x="550.9" y="224" font-size="10.5" fill="#758679">13 bright magenta</text>
+<rect x="655.4" y="150" width="92" height="44" rx="6" fill="#86ECE6"/>
+<text x="655.4" y="210" font-size="11.5" fill="#CFDDD3">#86ECE6</text>
+<text x="655.4" y="224" font-size="10.5" fill="#758679">14 bright cyan</text>
+<rect x="760.0" y="150" width="92" height="44" rx="6" fill="#EDEFEA"/>
+<text x="760.0" y="210" font-size="11.5" fill="#CFDDD3">#EDEFEA</text>
+<text x="760.0" y="224" font-size="10.5" fill="#758679">15 bright white</text>
+<rect x="0" y="266" width="880" height="250" rx="14" fill="#F1F4EF"/>
+<rect x="0.5" y="266.5" width="879" height="249" rx="13.5" fill="none" stroke="#5F6E66" stroke-opacity="0.35"/>
+<text x="28" y="306" font-size="18" font-weight="700" fill="#1B2620">Lit Cell Light</text>
+<text x="852" y="306" font-size="13" text-anchor="end" fill="#5F6E66">bg #F1F4EF · fg #1B2620 · cursor #0B7A4B</text>
+<rect x="28.0" y="330" width="92" height="44" rx="6" fill="#1B2620" stroke="#5F6E66" stroke-opacity="0.5"/>
+<text x="28.0" y="390" font-size="11.5" fill="#1B2620">#1B2620</text>
+<text x="28.0" y="404" font-size="10.5" fill="#5F6E66">0 black</text>
+<rect x="132.6" y="330" width="92" height="44" rx="6" fill="#AA2826"/>
+<text x="132.6" y="390" font-size="11.5" fill="#1B2620">#AA2826</text>
+<text x="132.6" y="404" font-size="10.5" fill="#5F6E66">1 red</text>
+<rect x="237.1" y="330" width="92" height="44" rx="6" fill="#09663F"/>
+<text x="237.1" y="390" font-size="11.5" fill="#1B2620">#09663F</text>
+<text x="237.1" y="404" font-size="10.5" fill="#5F6E66">2 green</text>
+<rect x="341.7" y="330" width="92" height="44" rx="6" fill="#834D00"/>
+<text x="341.7" y="390" font-size="11.5" fill="#1B2620">#834D00</text>
+<text x="341.7" y="404" font-size="10.5" fill="#5F6E66">3 yellow</text>
+<rect x="446.3" y="330" width="92" height="44" rx="6" fill="#225B9D"/>
+<text x="446.3" y="390" font-size="11.5" fill="#1B2620">#225B9D</text>
+<text x="446.3" y="404" font-size="10.5" fill="#5F6E66">4 blue</text>
+<rect x="550.9" y="330" width="92" height="44" rx="6" fill="#7E3E98"/>
+<text x="550.9" y="390" font-size="11.5" fill="#1B2620">#7E3E98</text>
+<text x="550.9" y="404" font-size="10.5" fill="#5F6E66">5 magenta</text>
+<rect x="655.4" y="330" width="92" height="44" rx="6" fill="#096561"/>
+<text x="655.4" y="390" font-size="11.5" fill="#1B2620">#096561</text>
+<text x="655.4" y="404" font-size="10.5" fill="#5F6E66">6 cyan</text>
+<rect x="760.0" y="330" width="92" height="44" rx="6" fill="#A9B4AD"/>
+<text x="760.0" y="390" font-size="11.5" fill="#1B2620">#A9B4AD</text>
+<text x="760.0" y="404" font-size="10.5" fill="#5F6E66">7 white</text>
+<rect x="28.0" y="416" width="92" height="44" rx="6" fill="#5F6E66"/>
+<text x="28.0" y="476" font-size="11.5" fill="#1B2620">#5F6E66</text>
+<text x="28.0" y="490" font-size="10.5" fill="#5F6E66">8 bright black</text>
+<rect x="132.6" y="416" width="92" height="44" rx="6" fill="#C9382F"/>
+<text x="132.6" y="476" font-size="11.5" fill="#1B2620">#C9382F</text>
+<text x="132.6" y="490" font-size="10.5" fill="#5F6E66">9 bright red</text>
+<rect x="237.1" y="416" width="92" height="44" rx="6" fill="#0C7E4F"/>
+<text x="237.1" y="476" font-size="11.5" fill="#1B2620">#0C7E4F</text>
+<text x="237.1" y="490" font-size="10.5" fill="#5F6E66">10 bright green</text>
+<rect x="341.7" y="416" width="92" height="44" rx="6" fill="#9E5F00"/>
+<text x="341.7" y="476" font-size="11.5" fill="#1B2620">#9E5F00</text>
+<text x="341.7" y="490" font-size="10.5" fill="#5F6E66">11 bright yellow</text>
+<rect x="446.3" y="416" width="92" height="44" rx="6" fill="#316FB7"/>
+<text x="446.3" y="476" font-size="11.5" fill="#1B2620">#316FB7</text>
+<text x="446.3" y="490" font-size="10.5" fill="#5F6E66">12 bright blue</text>
+<rect x="550.9" y="416" width="92" height="44" rx="6" fill="#9A4BB9"/>
+<text x="550.9" y="476" font-size="11.5" fill="#1B2620">#9A4BB9</text>
+<text x="550.9" y="490" font-size="10.5" fill="#5F6E66">13 bright magenta</text>
+<rect x="655.4" y="416" width="92" height="44" rx="6" fill="#0C7B75"/>
+<text x="655.4" y="476" font-size="11.5" fill="#1B2620">#0C7B75</text>
+<text x="655.4" y="490" font-size="10.5" fill="#5F6E66">14 bright cyan</text>
+<rect x="760.0" y="416" width="92" height="44" rx="6" fill="#FFFFFF" stroke="#5F6E66" stroke-opacity="0.5"/>
+<text x="760.0" y="476" font-size="11.5" fill="#1B2620">#FFFFFF</text>
+<text x="760.0" y="490" font-size="10.5" fill="#5F6E66">15 bright white</text>
+</svg>
