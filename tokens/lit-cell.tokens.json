@@ -1,0 +1,402 @@
+{
+  "$description": "Lit Cell, the dark variant of the Lit Cell color schemes. Generated files are built from this one; see SPEC.md.",
+  "$extensions": {
+    "dev.zincterminal": {
+      "name": "Lit Cell",
+      "variant": "dark",
+      "author": "Zerebos (https://github.com/zerebos)"
+    }
+  },
+  "base": {
+    "$type": "color",
+    "background": {
+      "$value": { "colorSpace": "srgb", "components": [0.0471, 0.0667, 0.0549], "hex": "#0C110E" },
+      "$description": "Main ground.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "use": "ground"
+        }
+      }
+    },
+    "foreground": {
+      "$value": { "colorSpace": "srgb", "components": [0.8118, 0.8667, 0.8275], "hex": "#CFDDD3" },
+      "$description": "Body text, identifiers.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "use": "text"
+        }
+      }
+    },
+    "cursor": {
+      "$value": { "colorSpace": "srgb", "components": [0.2392, 0.949, 0.6275], "hex": "#3DF2A0" },
+      "$description": "Text cursor; the one brightest thing on screen.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "use": "text"
+        }
+      }
+    },
+    "cursor-text": {
+      "$value": { "colorSpace": "srgb", "components": [0.0471, 0.0667, 0.0549], "hex": "#0C110E" },
+      "$description": "Text under a block cursor."
+    },
+    "selection": {
+      "$value": { "colorSpace": "srgb", "components": [0.1176, 0.2706, 0.2], "hex": "#1E4533" },
+      "$description": "Selection background.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "use": "surface",
+          "text": "{base.selection-text}"
+        }
+      }
+    },
+    "selection-text": {
+      "$value": { "colorSpace": "srgb", "components": [0.9294, 0.9373, 0.9176], "hex": "#EDEFEA" },
+      "$description": "Text inside a selection.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "use": "text",
+          "on": "{base.selection}"
+        }
+      }
+    }
+  },
+  "ansi": {
+    "$type": "color",
+    "black": {
+      "$value": { "colorSpace": "srgb", "components": [0.1098, 0.1412, 0.1255], "hex": "#1C2420" },
+      "$description": "Dark fills. In Lit Cell Light, also strong text.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 0,
+          "use": "fill"
+        }
+      }
+    },
+    "red": {
+      "$value": { "colorSpace": "srgb", "components": [1.0, 0.4196, 0.4196], "hex": "#FF6B6B" },
+      "$description": "Errors, failures, deletions.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 1,
+          "use": "text"
+        }
+      }
+    },
+    "green": {
+      "$value": { "colorSpace": "srgb", "components": [0.2392, 0.949, 0.6275], "hex": "#3DF2A0" },
+      "$description": "Success, additions, the accent.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 2,
+          "use": "text"
+        }
+      }
+    },
+    "yellow": {
+      "$value": { "colorSpace": "srgb", "components": [1.0, 0.6902, 0.0], "hex": "#FFB000" },
+      "$description": "Amber. Warnings, modifications, attention.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 3,
+          "use": "text"
+        }
+      }
+    },
+    "blue": {
+      "$value": { "colorSpace": "srgb", "components": [0.4353, 0.702, 0.949], "hex": "#6FB3F2" },
+      "$description": "Information, links, directories.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 4,
+          "use": "text"
+        }
+      }
+    },
+    "magenta": {
+      "$value": { "colorSpace": "srgb", "components": [0.7882, 0.6039, 0.949], "hex": "#C99AF2" },
+      "$description": "Keywords, special values.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 5,
+          "use": "text"
+        }
+      }
+    },
+    "cyan": {
+      "$value": { "colorSpace": "srgb", "components": [0.2824, 0.8392, 0.8118], "hex": "#48D6CF" },
+      "$description": "Types, hints, secondary information.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 6,
+          "use": "text"
+        }
+      }
+    },
+    "white": {
+      "$value": { "colorSpace": "srgb", "components": [0.7255, 0.7804, 0.7451], "hex": "#B9C7BE" },
+      "$description": "Light fills. In Lit Cell, also secondary text.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 7,
+          "use": "text"
+        }
+      }
+    },
+    "bright-black": {
+      "$value": { "colorSpace": "srgb", "components": [0.4588, 0.5255, 0.4745], "hex": "#758679" },
+      "$description": "Muted text: comments, metadata, line numbers.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 8,
+          "use": "text"
+        }
+      }
+    },
+    "bright-red": {
+      "$value": { "colorSpace": "srgb", "components": [1.0, 0.5804, 0.5804], "hex": "#FF9494" },
+      "$description": "Emphasized errors.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 9,
+          "use": "text"
+        }
+      }
+    },
+    "bright-green": {
+      "$value": { "colorSpace": "srgb", "components": [0.5255, 1.0, 0.7765], "hex": "#86FFC6" },
+      "$description": "Emphasized success, strong accent.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 10,
+          "use": "text"
+        }
+      }
+    },
+    "bright-yellow": {
+      "$value": { "colorSpace": "srgb", "components": [1.0, 0.7961, 0.3608], "hex": "#FFCB5C" },
+      "$description": "Emphasized warnings.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 11,
+          "use": "text"
+        }
+      }
+    },
+    "bright-blue": {
+      "$value": { "colorSpace": "srgb", "components": [0.6118, 0.7961, 1.0], "hex": "#9CCBFF" },
+      "$description": "Emphasized information, visited links.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 12,
+          "use": "text"
+        }
+      }
+    },
+    "bright-magenta": {
+      "$value": { "colorSpace": "srgb", "components": [0.8667, 0.7373, 1.0], "hex": "#DDBCFF" },
+      "$description": "Emphasized keywords.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 13,
+          "use": "text"
+        }
+      }
+    },
+    "bright-cyan": {
+      "$value": { "colorSpace": "srgb", "components": [0.5255, 0.9255, 0.902], "hex": "#86ECE6" },
+      "$description": "Emphasized types and hints.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 14,
+          "use": "text"
+        }
+      }
+    },
+    "bright-white": {
+      "$value": { "colorSpace": "srgb", "components": [0.9294, 0.9373, 0.9176], "hex": "#EDEFEA" },
+      "$description": "Strongest text in Lit Cell. A fill in Lit Cell Light.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "slot": 15,
+          "use": "text"
+        }
+      }
+    }
+  },
+  "ui": {
+    "$type": "color",
+    "$description": "Surfaces and text levels, mixed from foreground into background.",
+    "surface": {
+      "$value": { "colorSpace": "srgb", "components": [0.0784, 0.098, 0.0863], "hex": "#141916" },
+      "$description": "Status bars, sidebars, gutters.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "mix": {
+            "color": "{base.foreground}",
+            "into": "{base.background}",
+            "amount": 0.04
+          },
+          "use": "surface"
+        }
+      }
+    },
+    "surface-raised": {
+      "$value": { "colorSpace": "srgb", "components": [0.1098, 0.1294, 0.1176], "hex": "#1C211E" },
+      "$description": "Popups, menus, hover rows, the current line.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "mix": {
+            "color": "{base.foreground}",
+            "into": "{base.background}",
+            "amount": 0.08
+          },
+          "use": "surface"
+        }
+      }
+    },
+    "line": {
+      "$value": { "colorSpace": "srgb", "components": [0.1686, 0.1961, 0.1804], "hex": "#2B322E" },
+      "$description": "Borders, dividers, indent guides.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "mix": {
+            "color": "{base.foreground}",
+            "into": "{base.background}",
+            "amount": 0.16
+          }
+        }
+      }
+    },
+    "subtext": {
+      "$value": { "colorSpace": "srgb", "components": [0.6196, 0.6667, 0.6353], "hex": "#9EAAA2" },
+      "$description": "Secondary text: labels, sub-headings, operators, status text.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "mix": {
+            "color": "{base.foreground}",
+            "into": "{base.background}",
+            "amount": 0.75
+          },
+          "use": "text"
+        }
+      }
+    }
+  },
+  "tint": {
+    "$type": "color",
+    "$description": "Backgrounds mixed from a palette color into background. Foreground text stays readable on all of them.",
+    "search-match": {
+      "$value": { "colorSpace": "srgb", "components": [0.2863, 0.2235, 0.0392], "hex": "#49390A" },
+      "$description": "Behind search matches.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "mix": {
+            "color": "{ansi.yellow}",
+            "into": "{base.background}",
+            "amount": 0.25
+          },
+          "use": "surface"
+        }
+      }
+    },
+    "search-active": {
+      "$value": { "colorSpace": "srgb", "components": [0.4745, 0.349, 0.0314], "hex": "#795908" },
+      "$description": "Behind the current search match.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "mix": {
+            "color": "{ansi.yellow}",
+            "into": "{base.background}",
+            "amount": 0.45
+          },
+          "use": "surface"
+        }
+      }
+    },
+    "diff-added-line": {
+      "$value": { "colorSpace": "srgb", "components": [0.0706, 0.1725, 0.1255], "hex": "#122C20" },
+      "$description": "Behind an added line.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "mix": {
+            "color": "{ansi.green}",
+            "into": "{base.background}",
+            "amount": 0.12
+          },
+          "use": "surface"
+        }
+      }
+    },
+    "diff-added-text": {
+      "$value": { "colorSpace": "srgb", "components": [0.0941, 0.2863, 0.1961], "hex": "#184932" },
+      "$description": "Behind the added words within a line.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "mix": {
+            "color": "{ansi.green}",
+            "into": "{base.background}",
+            "amount": 0.25
+          },
+          "use": "surface"
+        }
+      }
+    },
+    "diff-removed-line": {
+      "$value": { "colorSpace": "srgb", "components": [0.1608, 0.1098, 0.098], "hex": "#291C19" },
+      "$description": "Behind a removed line.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "mix": {
+            "color": "{ansi.red}",
+            "into": "{base.background}",
+            "amount": 0.12
+          },
+          "use": "surface"
+        }
+      }
+    },
+    "diff-removed-text": {
+      "$value": { "colorSpace": "srgb", "components": [0.2863, 0.1569, 0.1451], "hex": "#492825" },
+      "$description": "Behind the removed words within a line.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "mix": {
+            "color": "{ansi.red}",
+            "into": "{base.background}",
+            "amount": 0.25
+          },
+          "use": "surface"
+        }
+      }
+    },
+    "diff-changed-line": {
+      "$value": { "colorSpace": "srgb", "components": [0.1608, 0.1412, 0.0471], "hex": "#29240C" },
+      "$description": "Behind a changed line.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "mix": {
+            "color": "{ansi.yellow}",
+            "into": "{base.background}",
+            "amount": 0.12
+          },
+          "use": "surface"
+        }
+      }
+    },
+    "diff-changed-text": {
+      "$value": { "colorSpace": "srgb", "components": [0.2863, 0.2235, 0.0392], "hex": "#49390A" },
+      "$description": "Behind the changed words within a line.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "mix": {
+            "color": "{ansi.yellow}",
+            "into": "{base.background}",
+            "amount": 0.25
+          },
+          "use": "surface"
+        }
+      }
+    }
+  }
+}

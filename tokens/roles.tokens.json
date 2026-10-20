@@ -1,0 +1,304 @@
+{
+  "$description": "What each Lit Cell color is for. Shared by both variants: every value is a reference into a variant's tokens.",
+  "interface": {
+    "$type": "color",
+    "$description": "For terminals, editors and other apps with chrome around the content.",
+    "on-accent": {
+      "$value": "{base.background}",
+      "$description": "Text on a green or accent fill."
+    },
+    "line-number": {
+      "$value": "{ansi.bright-black}",
+      "$description": "Line numbers."
+    },
+    "line-number-active": {
+      "$value": "{base.foreground}",
+      "$description": "The active line number."
+    },
+    "current-line": {
+      "$value": "{ui.surface-raised}",
+      "$description": "The current line."
+    },
+    "search-match": {
+      "$value": "{tint.search-match}",
+      "$description": "Behind a search match (the text keeps its color)."
+    },
+    "search-active": {
+      "$value": "{tint.search-active}",
+      "$description": "Behind the current search match (the text keeps its color)."
+    },
+    "border-active": {
+      "$value": "{ansi.green}",
+      "$description": "Active border, focused pane."
+    },
+    "border-inactive": {
+      "$value": "{ui.line}",
+      "$description": "Inactive border."
+    },
+    "bell": {
+      "$value": "{ansi.yellow}",
+      "$description": "Bell, attention."
+    },
+    "link": {
+      "$value": "{ansi.blue}",
+      "$description": "Links.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "underline": "solid"
+          }
+        }
+      }
+    },
+    "link-visited": {
+      "$value": "{ansi.bright-blue}",
+      "$description": "Visited links.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "underline": "solid"
+          }
+        }
+      }
+    },
+    "link-hover": {
+      "$value": "{ansi.bright-blue}",
+      "$description": "Hovered links.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "underline": "solid"
+          }
+        }
+      }
+    }
+  },
+  "syntax": {
+    "$type": "color",
+    "$description": "For editors, pagers (bat, delta) and syntax highlighters. In code, colors are categories, so amber marks constants here rather than warnings.",
+    "plain": {
+      "$value": "{base.foreground}",
+      "$description": "Plain code, variables, parameters."
+    },
+    "operator": {
+      "$value": "{ui.subtext}",
+      "$description": "Operators, punctuation."
+    },
+    "comment": {
+      "$value": "{ansi.bright-black}",
+      "$description": "Comments."
+    },
+    "keyword": {
+      "$value": "{ansi.magenta}",
+      "$description": "Keywords, storage, control flow."
+    },
+    "builtin": {
+      "$value": "{ansi.bright-magenta}",
+      "$description": "Builtins (`self`, `this`, built-in functions)."
+    },
+    "string": {
+      "$value": "{ansi.green}",
+      "$description": "Strings."
+    },
+    "escape": {
+      "$value": "{ansi.bright-yellow}",
+      "$description": "Escape sequences, regex."
+    },
+    "constant": {
+      "$value": "{ansi.yellow}",
+      "$description": "Numbers, constants, booleans."
+    },
+    "function": {
+      "$value": "{ansi.blue}",
+      "$description": "Functions, methods."
+    },
+    "attribute": {
+      "$value": "{ansi.bright-blue}",
+      "$description": "Attributes, annotations, decorators."
+    },
+    "type": {
+      "$value": "{ansi.cyan}",
+      "$description": "Types, classes, interfaces."
+    },
+    "property": {
+      "$value": "{ansi.bright-cyan}",
+      "$description": "Properties, fields."
+    },
+    "invalid": {
+      "$value": "{ansi.red}",
+      "$description": "Invalid code.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "underline": "wavy"
+          }
+        }
+      }
+    }
+  },
+  "markdown": {
+    "$type": "color",
+    "heading": {
+      "$value": "{ansi.green}",
+      "$description": "Headings.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "bold": true
+          }
+        }
+      }
+    },
+    "link": {
+      "$value": "{ansi.blue}",
+      "$description": "Links.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "underline": "solid"
+          }
+        }
+      }
+    },
+    "code": {
+      "$value": "{ansi.cyan}",
+      "$description": "Inline code and code blocks."
+    },
+    "quote": {
+      "$value": "{ansi.bright-black}",
+      "$description": "Quotes."
+    },
+    "emphasis": {
+      "$value": "{base.foreground}",
+      "$description": "Emphasis.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "italic": true
+          }
+        }
+      }
+    },
+    "strong": {
+      "$value": "{base.foreground}",
+      "$description": "Strong emphasis.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "bold": true
+          }
+        }
+      }
+    }
+  },
+  "diagnostics": {
+    "$type": "color",
+    "$description": "Severity is shown by underline shape as well as color, so it reads without color.",
+    "error": {
+      "$value": "{ansi.red}",
+      "$description": "Error.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "underline": "wavy"
+          }
+        }
+      }
+    },
+    "warning": {
+      "$value": "{ansi.yellow}",
+      "$description": "Warning.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "underline": "dashed"
+          }
+        }
+      }
+    },
+    "info": {
+      "$value": "{ansi.blue}",
+      "$description": "Info.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "underline": "dotted"
+          }
+        }
+      }
+    },
+    "hint": {
+      "$value": "{ansi.cyan}",
+      "$description": "Hint.",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "underline": "dotted"
+          }
+        }
+      }
+    }
+  },
+  "diff": {
+    "$type": "color",
+    "added": {
+      "$value": "{ansi.green}",
+      "$description": "Added lines."
+    },
+    "removed": {
+      "$value": "{ansi.red}",
+      "$description": "Removed lines."
+    },
+    "changed": {
+      "$value": "{ansi.yellow}",
+      "$description": "Changed lines."
+    },
+    "added-line": {
+      "$value": "{tint.diff-added-line}",
+      "$description": "Behind an added line."
+    },
+    "added-text": {
+      "$value": "{tint.diff-added-text}",
+      "$description": "Behind the added words within a line."
+    },
+    "removed-line": {
+      "$value": "{tint.diff-removed-line}",
+      "$description": "Behind a removed line."
+    },
+    "removed-text": {
+      "$value": "{tint.diff-removed-text}",
+      "$description": "Behind the removed words within a line."
+    },
+    "changed-line": {
+      "$value": "{tint.diff-changed-line}",
+      "$description": "Behind a changed line."
+    },
+    "changed-text": {
+      "$value": "{tint.diff-changed-text}",
+      "$description": "Behind the changed words within a line."
+    },
+    "file-header": {
+      "$value": "{base.foreground}",
+      "$description": "File headers (`diff --git`, `---`, `+++`).",
+      "$extensions": {
+        "dev.zincterminal": {
+          "style": {
+            "bold": true
+          }
+        }
+      }
+    },
+    "extended-header": {
+      "$value": "{ansi.bright-black}",
+      "$description": "Extended headers (`index`, `new file mode`, `rename from`, `similarity index` and similar)."
+    },
+    "hunk-header": {
+      "$value": "{ansi.cyan}",
+      "$description": "Hunk headers (`@@ … @@`)."
+    },
+    "context": {
+      "$value": "{base.foreground}",
+      "$description": "Context lines."
+    }
+  }
+}
