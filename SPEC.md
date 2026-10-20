@@ -147,6 +147,15 @@ Severity is shown by underline shape as well as color, so it reads without color
 
 Added lines are green, removed lines red, and changed lines yellow. Line and text backgrounds use the [tints](#tints) above. Diffs must keep their `+` and `−` markers or gutter symbols, so additions and deletions never rely on red versus green alone.
 
+| Line | Color |
+|---|---|
+| File headers (`diff --git`, `---`, `+++`) | `foreground`, bold |
+| Extended headers (`index`, `new file mode`, `rename from`, `similarity index` and similar) | bright black |
+| Hunk headers (`@@ … @@`) | cyan |
+| Context lines | `foreground` |
+
+This stays close to git's defaults, which make every header bold. Lit Cell dims the extended headers, since they're metadata, so the file names stand out.
+
 ## Contrast
 
 - **Lit Cell:** every color except black is at least 4.5:1. Bright black, for comments, is 4.9:1.
